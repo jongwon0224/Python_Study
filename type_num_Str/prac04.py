@@ -38,7 +38,7 @@ print(text.format('ABC',123)) #abcde ABC 123
 #2. 대체하기 : replace(a,b) -> a를 b로 바꿈
 '''
 text = 'abcde ABC ABC'
-print(text.replace('ABC','Kk')) #abcde KBC KBC
+print(text.replace('ABC','Kk')) #abcde Kk Kk
 '''
 
 #3. 자르기 : split(a)
@@ -73,9 +73,41 @@ print(text.rstrip('*')) #오른쪽 별 제거
 '''
 
 #7. 인덱스 찾기 : find(a) / rfind(a) / index(a) / rindex(a)
+'''
 text = 'ABC ABC'
 print(text.find('A')) #0 -> 없는값 찾을때 -1리턴
 print(text.rfind('A')) #4 -> 없는값 찾을때 -1리턴
 print(text.index('A')) #0 -> 없는값은 오류
 print(text.rindex('A')) #4 -> 없는값은 오류
+'''
 
+#8. 확인하기 : isalpha() / isdigit() / isalnum() / isupper() / islower()
+'''
+text1 = 'ABCabc123'
+text2 = '123' #isdigit, isalnum
+text3 = 'ABC' #isalpha, isalnum, isupper
+text4 = 'abc' #isalpha, isalnumm, islower
+
+print(text1.isalpha()) #알파벳인가 -> false
+print(text1.isdigit()) #숫자인가 -> false
+print(text1.isalnum()) #알파벳+숫자인가 -> true
+print(text1.isupper()) #대문자인가 -> false
+print(text1.islower()) #소문자인가 -> false
+'''
+
+#9. 대/소문자 만들기 : upper() / lower()
+'''
+text = 'ABCabc'
+
+print(text.upper()) #ABCABC
+print(text.lower()) #abcabc
+'''
+
+#10. 0채우기 : zfill() ->  zfill(숫자) : 숫자만큼 자릿수맞춰서 0채워줌 -> 02, 0002 이런식식
+y = '2020'
+m = '3'
+d = '1'
+
+print(y.zfill(4)) #2020
+print(m.zfill(2)) #03
+print(d.zfill(2)) #01
