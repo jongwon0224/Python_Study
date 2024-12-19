@@ -22,7 +22,7 @@ else :
 n = int(input('n:'))
 for i in range(1, n+1) :
     if i % 3 == 0 :
-        print('X')
+        continue
     else :
         print(i)
 '''
@@ -41,7 +41,7 @@ while True :
 
 
 # for + for -> 주사위 2개 경우의 수 거를수있을듯
-print('hi')
+'''
 count = 0
 
 for i in range(1,7) :
@@ -51,3 +51,4 @@ for i in range(1,7) :
             count += 1
         
 print (count)
+'''
