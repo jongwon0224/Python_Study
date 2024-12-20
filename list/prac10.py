@@ -42,6 +42,7 @@ print('b' in li) # 확인하기 -> b가 li에 있나요? -> true/false반환
 print(len(li)) # 리스트 전체 개수 -> 5
 
 print(li.count('a')) # 특정값 개수 세기 -> a는 1개
+
 '''
 
 num = []
@@ -63,3 +64,4 @@ print(num)
 num.sort() # 순서대로 정렬
 num.sort(reverse=True) # 내림차순으로 정렬
 print(num)
+
