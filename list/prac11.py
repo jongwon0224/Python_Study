@@ -49,6 +49,17 @@ tu = ('a','b','c')
 print(list(tu)) # 튜플 -> 리스트 타입 변경
 '''
 
+'''
+num = (5,7,9)
+num1 = ('a','b','c')
+
+(num, num1) = (num1, num)
+
+print(list(num)) #['a', 'b', 'c']
+'''
+
+
+'''
 li = []
 for i in range(1,11) :
     li.insert(i-1, i)
@@ -56,3 +67,4 @@ for i in range(1,11) :
 print(li)
 
 print(tuple(li))
+'''

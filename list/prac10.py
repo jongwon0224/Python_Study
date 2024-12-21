@@ -62,6 +62,8 @@ print(num)
 
 # sort() -> 괄호안에 reverse=True면 역순 / false면 sort실행
 num.sort() # 순서대로 정렬
+print(num)
+
 num.sort(reverse=True) # 내림차순으로 정렬
 print(num)
 

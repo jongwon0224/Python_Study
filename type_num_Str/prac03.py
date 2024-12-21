@@ -71,7 +71,7 @@ print(y) #1 -> 나머지 <=> 7 % 2 나머지 출력이랑 동일
 #최대값 : max(a,b,c,d...) -> list형태도 가능
 print(max([1,3,5,7])) #7
 
-#최소값 : min(a,b,c,d...) -> list형태도 가능
+#최소값 : min(a,b,c,d...) -> tuple형태도 가능
 print(min(1,3,5,7)) #1
 
 #합 : sum(집합 형태 : iterable) -> list형태나 tuple형태로 넣어야 함수실행됨
