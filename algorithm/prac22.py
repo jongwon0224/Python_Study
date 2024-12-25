@@ -12,7 +12,7 @@ for i in range(1, n+1):
 if len(li) != 2:
     print('소수아님')
 else :
-    print(f'({n}은(는) 소수입니다.)')
+    print(f'{n}은(는) 소수입니다.')
 '''
 '''
 #  2 ~ n-1로 i값 범위 잡음 => 그중 약수가 없으면 소수

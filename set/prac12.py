@@ -51,6 +51,7 @@ print(a^b) # {1,4} : 대칭 차집합
 
 a = [1,2,3,4,5]
 b = [2,3,5,7,9]
+c = a[:]
 
 set1, set2 = set(a), set(b)
 
@@ -58,3 +59,10 @@ set3 = set1 | set2
 # li = [set3] # [{1,2,3,4,5,7,9}] 이런식으로 객체밖에 배열생김
 li = list(set3) #[1, 2, 3, 4, 5, 7, 9] #리스트함수 사용이 옳은방법
 print(li)
+
+# set사용안하고 합집합 구하기 !
+for i in b:
+    if i not in c:
+        c.append(i)
+
+print(c)

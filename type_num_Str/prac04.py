@@ -94,6 +94,17 @@ print(text1.isalnum()) #알파벳+숫자인가 -> true
 print(text1.isupper()) #대문자인가 -> false
 print(text1.islower()) #소문자인가 -> false
 '''
+'''
+text = 'AbC123'
+li = []
+
+for i in range (len(text)):
+    if text[i].isupper() & text.isalnum() :
+        li.append(i)
+    
+for j in range (len(li)) :
+    print(li[j])
+'''
 
 #9. 대/소문자 만들기 : upper() / lower()
 '''

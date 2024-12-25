@@ -11,14 +11,14 @@ for i in range(1, a+1):
             print(f'(i : {i}, j : {j})')
 '''            
 
-'''
+
 # 구구단 -> 2단부터 9단까지
 for i in range(2, 10):
     
     for j in range(1, 10):
-        print(f'({i} * {j} = {i * j})')
+        print(f'{i} * {j} = {i * j}')
     print() # 모수가 바뀔때마다 엔터
-'''
+
 
 # 행렬 만들기
 '''
