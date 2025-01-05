@@ -48,10 +48,20 @@ print(dic)
 list(dic.values()) #value값을 따로 변환해야됨
 '''
 
+'''
 #딕셔너리로 타입 변환 (2개씩 있으면 가능 -> 3개는 불가)
-
 li = ['ab','cd','ef'] #2개씩 리스트형태일 경우 -> 딕셔너리로 변환 가능
 print(dict(li)) # {'a': 'b', 'c': 'd', 'e': 'f'}
 
 li = [['a',1],['b',2],['c',3]] # 배열로 2개씩 묶여있을 경우도 딕셔너리로 변환 가능
 print(dict(li)) # {'a': 1, 'b': 2, 'c': 3}
+'''
+
+# enumerate 내장함수 사용하기
+a = [1,2,3,4,5,6,7,8,9]
+
+for key,value in enumerate(a):
+    print(f'key : {key} value : {value}')
+
+for key, val in enumerate(a, start=1):
+    print(f'key : {key} val : {val}')

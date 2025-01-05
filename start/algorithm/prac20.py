@@ -47,3 +47,10 @@ print(check) # == print(n in num)
 
 
 
+
+
+
+
+
+
+
